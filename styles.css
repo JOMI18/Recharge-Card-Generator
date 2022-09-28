@@ -1,0 +1,96 @@
+@media (max-width:800px) {
+    
+    #table{
+        /* border: 1px black solid ; */
+        /* margin-left: -10px !important; */
+        border-collapse: collapse !important;
+    
+    }
+   .w-25{
+        width: 200px !important;
+    }
+
+    #table thead{
+        display: none;
+    }
+    #table, #table tbody, #table tr, #table td{
+        display: block;
+        width: 100% !important;
+    }
+    #table tr{
+        margin-bottom: 20px !important;
+    }
+
+    #table td{
+        text-align: right;
+        padding-left: 30%;
+        position: relative;
+    }
+    #table td::before{
+        content: attr(data-label);
+        text-align: left;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+}
+@media (max-width:490px) {
+    
+    #table{
+        /* border: 1px black solid ; */
+        /* margin-left: -20px !important; */
+        border-collapse: collapse;
+        box-sizing: border-box;
+        
+    }
+   .w-25{
+        width: 120px !important;
+        font-size: 12px;
+    }
+
+    #table thead{
+        display: none;
+    }
+    #table, #table tbody, #table #row, #table td{
+        display: block;
+        width: 100% !important;
+    }
+    #table #row{
+        font-size: 12px;
+        margin-bottom: 15px !important;
+    }
+    #table button{
+        font-size: 12px;
+    }
+
+    #table td{
+        text-align: right;
+        padding-left: 30%;
+        position: relative;
+        
+    }
+    #table td::before{
+        content: attr(data-label);
+        text-align: left;
+        position: absolute;
+        left: 0;
+        width: 60%;
+        padding-left: 5px;
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+}
+
+@media (max-width:385px) {
+    .card{
+        padding:5px !important;
+        margin: 15px !important;
+    }
+}

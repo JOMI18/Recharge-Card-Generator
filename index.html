@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./BOOTSTRAP2.0/bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <center>
+        <h1 class="text-dark">RECHARGE CARD GENERATOR</h1>
+       </center>
+    
+       <div class="card m-5 p-5 shadow form bg-info text-white">
+    
+        <h3>Airtime Service</h3>
+        <select name="" id="airtime" class="mt-2 mb-3">
+            <option value="glo">GLO</option>
+            <option value="mtn">MTN</option>
+            <option value="airtel">AIRTEL</option>
+            <option value="9-mobile">9-MOBILE</option>
+        </select>
+        
+        
+        <h3>Amount Needed</h3>
+        <input type="number" name="" id="amount" class="mt-2 mb-3">
+        <button class="form-control w-25 bg-dark text-white" onclick="generate()" >GENERATE PIN</button>
+    
+        
+        
+        <h3 class="mt-5">Status Table</h3>
+        <table id="table" class=" text-white table table-hover  table-bordered table-dark ">  
+            <thead>
+                <th>S/N</th>
+                <th>AIRTIME SERVICE</th>
+                <th>AMOUNT</th>
+                <th>CODE</th>
+                <th>VALIDITY</th>
+                <th>ACTION</th>
+            </thead>
+           <tbody id="tableD">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+           </tbody>
+        </table>
+        <button class="form-control w-25 bg-dark text-white mt-3"  onclick="save()">SAVE PIN</button>
+        
+        
+        <h3 class="mt-3">Validity Checker</h3>
+        <input type="text" name="" id="checker" class="mt-2 mb-3">
+        <button class="form-control w-25 bg-dark text-white" onclick="confirm()" >CHECK PIN</button>
+    </div> 
+</body>
+<script src="./script.js"></script>
+</html> 
